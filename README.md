@@ -14,3 +14,4 @@ Flask 配置BluePrint 项目结构
 
 # requirement
 * Flask==0.10.1
+* Jinja==2.7.2
