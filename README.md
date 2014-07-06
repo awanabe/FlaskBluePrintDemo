@@ -1,4 +1,5 @@
 FlaskBluePrintDemo
+with sub domain
 ==================
 
 Flask 配置BluePrint 子域名 项目结构
