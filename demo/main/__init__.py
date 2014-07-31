@@ -7,8 +7,8 @@ from flask import render_template
 #: 初始化Main蓝图. 注意静态文件和模板文件夹路径
 #: 模板路径是 root_path + template_folder
 #: root_path 是 FlaskBluePrintDemo的路径
-main_app = Blueprint('main', 'main', static_folder='demo/main/static',
-                     template_folder='demo/main/templates', subdomain='www')
+main_app = Blueprint('main', __name__, static_folder='static',
+                     template_folder='templates', subdomain='www')
 
 
 @main_app.route('/')

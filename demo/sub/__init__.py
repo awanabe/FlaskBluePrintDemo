@@ -4,8 +4,8 @@ __author__ = 'tech.chao'
 from flask import Blueprint
 from flask import render_template
 
-sub_app = Blueprint('sub', 'sub', static_folder='demo/main/static',
-                    template_folder='demo/sub/templates', subdomain='sub')
+sub_app = Blueprint('sub', __name__, static_folder='static',
+                    template_folder='templates', subdomain='sub')
 
 
 @sub_app.route('/')
